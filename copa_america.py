@@ -40,7 +40,7 @@ df_match_for_player = md.calcular_partidos_jugados(223, 282)  # Calcula partidos
 # Escribe todos los DataFrames en un archivo Excel con múltiples hojas
 with pd.ExcelWriter('Copa_america_2024.xlsx') as writer:
     match_america.to_excel(writer, sheet_name='Match america', index=False)
-    df_player_america.to_excel(writer, sheet_name='Player america')
+    df_player_america.to_excel(writer, sheet_name='Player america', index=False)
     df_pass.to_excel(writer, sheet_name='Pases', index=False)
     df_goal.to_excel(writer, sheet_name='Goles Por Jugador', index=False)
     df_assist.to_excel(writer, sheet_name='Asistencias Por Jugador', index=False)

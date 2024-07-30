@@ -24,7 +24,7 @@ def tarjetas_amarillas_por_partido(id_competencia, id_season):
             card_column_1 = 'foul_committed_card'
         else:
             card_column_1 = None
-        
+   
         if 'bad_behaviour_card' in events_euro.columns:
             card_column_2 = 'bad_behaviour_card'
         else:
